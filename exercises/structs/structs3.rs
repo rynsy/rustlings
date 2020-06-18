@@ -3,8 +3,6 @@
 // exercise we have defined the Package struct and we want to test some logic attached to it,
 // make the code compile and the tests pass! If you have issues execute `rustlings hint structs3`
 
-// I AM NOT DONE
-
 #[derive(Debug)]
 struct Package {
     from: String,
@@ -21,11 +19,11 @@ impl Package {
         }
     }
 
-    fn is_international(&self) -> ??? {
+    fn is_international(&self) -> bool {
         self.from != self.to
     }
 
-    fn get_fees(&self, cost_per_kg: f32) -> ??? {
+    fn get_fees(&self, cost_per_kg: f32) -> f32 {
         // Something goes here...
         self.weight * cost_per_kg
     }
