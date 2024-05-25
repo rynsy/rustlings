@@ -6,7 +6,7 @@
 // for a hint.
 
 fn main() {
-    let a = [u32; 101];
+    let a = [0; 101];
 
     if a.len() >= 100 {
         println!("Wow, that's a big array!");
